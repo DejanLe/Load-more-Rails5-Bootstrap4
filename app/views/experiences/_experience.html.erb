@@ -1,14 +1,15 @@
 <div class="record " data-id="<%= experience.id %>">
   
-       			<div class="card border-info mb-3">
-       				<div class="card-header"> 
-       				 <%= link_to experience.name, experience %>  <%= experience.description %> 
-       				 </div> 
-       				 <div class="card-body text-info">
-       				 	 <%= experience.owner %> 
-			       		 <%= experience.start_date %> 
-			        	<%= experience.end_date %>  
-       				 </div> 
+        <div class="card border-info mb-3">
+       	 <div class="card-header"> 
+               <%= image_tag(experience.experience.url) unless experience.experience.blank?  %>
+       	  <%= link_to experience.name, experience %>  <%= experience.description %> 
+       	  </div> 
+       	  <div class="card-body text-info">
+       		  <%= experience.owner %> 
+			  <%= experience.start_date %> 
+			  <%= experience.end_date %>  
+               </div> 
 		  
- 					 </div>
+       </div>
  </div>  
