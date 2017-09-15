@@ -3,17 +3,17 @@ class ExperiencesController < ApplicationController
 
   # GET /experiences
   # GET /experiences.json
-  def index
-
+  def index 
     if params[:id]
-    @experiences = Experience.where('id < ?', params[:id]).limit(10)
-  else
-    @experiences = Experience.limit(10).order('created_at DESC')  
-  end
-  respond_to do |format|
-    format.html
-    format.js
-  end
+      @experiences = Experience.where('id < ?', params[:id]).limit(10)
+    else
+      @experiences = Experience.limit(10)  
+    end
+    
+    respond_to do |format|
+      format.html
+      format.js
+    end
  
   end
 
