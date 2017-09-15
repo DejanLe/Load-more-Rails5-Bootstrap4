@@ -1,0 +1,46 @@
+.container{
+    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.container .record {
+    padding: 10px;
+    background-color: #F0F0F0;
+    margin-bottom: 10px;
+}
+
+.load-more {
+    background-color: #000;
+    padding: 15px;
+    color: #fff;
+}
+
+.load-more-container{
+    @extend .container;
+    text-align: center;
+} 
+.load_more_button {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    display: block;
+    width: 20%;
+    color: #fff;
+}
+.load_more_button a {
+    background: #042a63;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    transition: all 0.25s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+.load_more_button a:hover {
+    background-color: #021737;
+}
+ .load-more-padding {
+ padding-top: 80px !important;
+ }
+ 

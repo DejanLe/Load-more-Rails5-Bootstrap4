@@ -1,0 +1,38 @@
+ <div class="experience_show">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+                 
+             
+        <%= image_tag @experience.experience.url, class: 'img-fluid' %>
+        <p>
+          <strong>Owner:</strong>
+          <%= @experience.owner %>
+        </p>
+
+        <p>
+          <strong>Start date:</strong>
+          <%= @experience.start_date %>
+        </p>
+
+        <p>
+          <strong>End date:</strong>
+          <%= @experience.end_date %>
+        </p>
+
+        <p>
+          <strong>Name:</strong>
+          <%= @experience.name %>
+        </p>
+
+        <p>
+          <strong>Description:</strong>
+          <%= @experience.description %>
+        </p>
+
+        <%= link_to 'Edit', edit_experience_path(@experience) %> |
+        <%= link_to 'Back', experiences_path %>
+          </div>
+     </div>
+   </div>
+ </div>

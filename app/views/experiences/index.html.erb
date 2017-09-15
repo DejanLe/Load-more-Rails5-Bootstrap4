@@ -1,0 +1,16 @@
+<%= render 'partials/navbar' %>
+<div class="container">
+   <div class="row"> 
+       <div class="col-md-12"> 
+      	<div class="load-more-padding">
+      		 <%= render @experiences %>   
+      	</div> 
+      </div>
+    </div>
+</div>
+
+
+<div class=" load-more-container ">
+  <%= image_tag "ajax-loader.gif", style: "display:none;", class: "loading-gif" %>
+  <%= link_to "Load More", experiences_path, class: "load-more " %>
+</div>
